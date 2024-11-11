@@ -45,7 +45,6 @@ export default function Button({setHash}) {
         const resultHash = await hashImage(file, "MD5");
         const score = hashToScore(resultHash, 0, 100);
         setHash(score);
-        console.log(score)
       } catch (error) {
         console.error("Error:", error);
       }
