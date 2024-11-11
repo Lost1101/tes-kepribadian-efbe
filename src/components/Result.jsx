@@ -20,7 +20,7 @@ export default function Result({ hash, setHash, setShowResult}) {
     return (
         <div className="bg-base-200 min-h-screen">
             <div className="text-center">
-                <div className='py-5'>
+                <div className='p-5'>
                     <p className='block'>Selamat, Kamu adalah...</p>
                     <h1 className='text-5xl font-bold block'>{result.title}</h1>
                     <img src={result.img} alt={result.title} className='w-72 m-auto py-5'/>
