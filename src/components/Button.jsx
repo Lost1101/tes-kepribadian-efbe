@@ -33,7 +33,8 @@ export default function Button({setHash}) {
     const hex = hash.slice(0, 8);
     const decimalValue = parseInt(hex, 16);
   
-    const score = min + (decimalValue % (max - min));
+    const normalizedValue = Math.sqrt(decimalValue / 0xffffffff);
+    const score = Math.floor(min + normalizedValue * (max - min));
     return score;
   };
 
