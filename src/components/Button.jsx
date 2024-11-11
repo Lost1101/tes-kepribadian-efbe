@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import CryptoJS from "crypto-js";
+import CryptoJS from "crypto-js"
 
 export default function Button({setHash}) {
   const hashImage = (file, hashType = "MD5") => {
