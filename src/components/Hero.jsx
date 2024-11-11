@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types'
 import Button from "./Button"
-import test from '../../public/karbit.jpeg'
 
 export default function Hero({setHash}){
-    console.log(test)
     return(
         <div className="hero bg-base-200 min-h-screen">
             <div className="hero-content text-center">
